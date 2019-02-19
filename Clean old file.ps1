@@ -1,0 +1,1 @@
+Get-ChildItem -Path I:\TEMP -Recurse | Where-Object {$_.CreationTime -lt (Get-Date).AddMonths(-1)} 
